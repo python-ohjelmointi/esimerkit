@@ -6,6 +6,9 @@ Arvion saamiseksi ohjelmassa huomioidaan tiedostojen koon ja liittymien
 nopeuksien ilmoittamisessa olevat eroavaisuudet, eli kilo- ja mega-
 yksiköiden eri merkitykset. Lisäksi lasketaan tiedoston koko tavujen
 sijaan bitteinä.
+
+Esimerkissä käytetään input-funktiota käyttäjän syötteen lukemiseksi, ja
+int-funktiota annetun tekstin muuttamisessa numeroarvoksi.
 '''
 
 # megatavua  (mega = 1024**2)
