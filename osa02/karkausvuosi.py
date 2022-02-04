@@ -5,5 +5,5 @@ while True:
     if seuraava % 4 == 0 and (seuraava % 100 != 0 or seuraava % 400 == 0):
         print(f'{seuraava} on karkausvuosi')
         break
-    else:
-        seuraava += 1
+
+    seuraava += 1
