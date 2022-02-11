@@ -1,16 +1,18 @@
+'''
+Saat tutkia ja muokata tätä esimerkkikoodia harjoitustehtävän idean ymmärtämiseksi
+ja asioiden opettelemiseksi, mutta koodin kopiointi tehtävän ratkaisuun on kielletty.
+'''
+
 tarina = ''
 vanha_sana = ''
 
 while True:
-    sana = input('Anna sana: ')
+    sana = input('Sana: ')
 
-    # jos sana on loppu, poistutaan silmukasta
     if sana == 'loppu' or vanha_sana == sana:
         break
 
-    # ei tulosteta, vaan otetaan talteen
     tarina += sana + ' '
-
     vanha_sana = sana
 
 # tulostetaan lopussa kaikki

@@ -1,7 +1,10 @@
-print('Kerro huominen sääennuste:')
+'''
+Saat tutkia ja muokata tätä esimerkkikoodia harjoitustehtävän idean ymmärtämiseksi
+ja asioiden opettelemiseksi, mutta koodin kopiointi tehtävän ratkaisuun on kielletty.
+'''
 
-lampo = int(input('Lämpötila: '))
-sade = input('Sataako (kyllä/ei): ')
+lampo = 15
+sade = 'kyllä'
 
 print("Pue housut ja t-paita")
 

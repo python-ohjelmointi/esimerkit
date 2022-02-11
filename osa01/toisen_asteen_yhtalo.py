@@ -1,3 +1,8 @@
+'''
+Saat tutkia ja muokata tätä esimerkkikoodia harjoitustehtävän idean ymmärtämiseksi
+ja asioiden opettelemiseksi, mutta koodin kopiointi tehtävän ratkaisuun on kielletty.
+'''
+
 from math import sqrt
 
 a = int(input('Anna a: '))
