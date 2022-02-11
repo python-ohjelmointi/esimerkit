@@ -8,10 +8,7 @@ def seitseman_veljesta():
     print('Aapo')
     print('Eero')
     print('Juhani')
-    print('Lauri')
-    print('Simeoni')
-    print('Timo')
-    print('Tuomas')
+    print('...')
 
 
 if __name__ == "__main__":
