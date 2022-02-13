@@ -2,7 +2,7 @@
 Tämä esimerkkitiedosto näyttää, miten voit selvittää toisen tiedoston
 sijainnin suhteessa suoritettavaan Python-skriptiin pathlib:in avulla.
 
-Käsiteltävien tiedostojen todellisen polun käyttäminen on kannattavaa, koska 
+Käsiteltävien tiedostojen todellisen polun käyttäminen on kannattavaa, koska
 tällöin ohjelmasi toiminta ei ole riippuvaista siitä, mistä hakemistosta käsin
 ohjelma on käynnistetty.
 '''
