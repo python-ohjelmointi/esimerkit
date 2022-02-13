@@ -9,7 +9,7 @@ ohjelma on käynnistetty.
 from pathlib import Path
 
 # Luodaan polku 'tiedosto.txt'-tiedostoon hyödyntämällä tämän skritin sijaintia:
-p = Path(__file__).resolve().parent / 'tiedosto.txt'
+tiedosto = Path(__file__).resolve().parent / 'tiedosto.txt'
 
-# Luetaan tiedosto, ja tulostetaan sen sisältö:
-print(p.read_text())
+# Luetaan tiedosto ja tulostetaan sen sisältö:
+print(tiedosto.read_text())
