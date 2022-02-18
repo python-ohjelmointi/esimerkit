@@ -1,5 +1,5 @@
 '''
-> "900-sarjan henkilötunnukset on tarkoitettu testauskäyttöön, ja ne täyttävät 
+> "900-sarjan henkilötunnukset on tarkoitettu testauskäyttöön, ja ne täyttävät
 > henkilötunnuksen muotovaatimukset, mutta ne eivät ole virallisia henkilötunnuksia."
 
 https://www.kanta.fi/jarjestelmakehittajat/testiketti
