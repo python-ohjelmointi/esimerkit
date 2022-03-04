@@ -6,3 +6,7 @@ ja asioiden opettelemiseksi, mutta koodin kopiointi tehtävän ratkaisuun on kie
 
 def ensimmainen(merkkijono):
     print(merkkijono[0])
+
+
+def viimeinen(merkkijono):
+    print(merkkijono[-1])
