@@ -1,38 +1,47 @@
-def operaatiot(teksti) -> None:
-    print('Alkuperäinen:', teksti)
+# pylint: disable=consider-using-enumerate
 
-    # Yhdistäminen plussalla ja kertolaskuna
-    print('Yhdistetty:  ', teksti + teksti)
-    print('Kerrottu:    ', teksti * 3)
+def operaatiot(data):
+    print('Alkuperäinen:', data)
 
-    # Indeksointi hakasuluilla ja kokonaisluvuilla
-    print('Eka:         ', teksti[0])
-    print('Toka:        ', teksti[1])
-    print('Vika:        ', teksti[-1])
+    # Yhdisteleminen ja "kertominen"
+    print('Yhdistely:   ', data + data)
+    print('Kertominen:  ', data * 3)
 
-    # Pituus len-funktiolla
-    print('Pituus:      ', len(teksti))
+    # Indeksit (kokonaislukuja) ja hakasulut
+    print('Eka:         ', data[0])
+    print('Toka:        ', data[1])
+    print('Vika:        ', data[-1])
 
-    # Osajonot hakasuluilla ja rajoilla
-    print('Kaksi ekaa:  ', teksti[:2])
-    print('Kaksi vikaa: ', teksti[-2:])
+    # Osat saadaan hakasuluilla ja rajoilla
+    print('Kaksi ekaa:  ', data[:2])
+    print('Kaksi vikaa: ', data[-2:])
 
-    # 'in' -operaatio etsii sisällöstä
-    print('Löytyykö "ti"?', 'ti' in teksti)
+    # pituuden selvittäminen
+    print('Pituus:      ', len(data))
 
-    # max- ja min-operaatiot
-    print('Minimi:      ', min(teksti))
-    print('Maksimi:     ', max(teksti))
+    # in-operaatio etsii sisällöstä
+    print('Löytyykö ti? ', 'ti' in data)
 
-    # "iterointi" yksi pala kerrallaan
-    print('Yksi kerrallaan: ')
-    for i in range(len(teksti)):
-        print(i, teksti[i])
+    # maksimi ja minimi
+    print('Minimi:      ', min(data))
+    print('Maksimi:     ', max(data))
+
+    # läpikäynti yksi kerrallaan indeksin avulla
+    for i in range(len(data)):
+        print(i, data[i])
+        i += 1
 
 
+# merkkijonoilla
 operaatiot('Python-ohjelmointi')
 
 print('-' * 80)
 
-paivat = ['ma', 'ti', 'ke', 'to', 'pe', 'la', 'su']
-operaatiot(paivat)
+# listoilla
+viikonpaivat = ['ma', 'ti', 'ke', 'to', 'pe', 'la', 'su']
+operaatiot(viikonpaivat)
+
+print('~' * 80)
+
+numerot = [4, 18, 30, 6, 1, 9]
+operaatiot(numerot)
