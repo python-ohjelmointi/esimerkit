@@ -12,15 +12,18 @@ olevat kokonaisluvut määräävät x- ja y-koordinaatit. Arvoina ovat
 vain tiedossa olevat pelin numerot.
 '''
 
-sudoku = {}
+# ruudukko on nyt sanakirja, jossa avaimena on tupleja:
+sudoku = {
+    (0, 0): 9,
+    (4, 0): 8,
+    (6, 0): 3
+}
 
-sudoku[0, 0] = 9
-sudoku[4, 0] = 8
-sudoku[6, 0] = 3
+# uusien avaimien ja arvojen lisääminen onnistuu myös seuraavasti:
 sudoku[3, 7] = 6
 sudoku[8, 6] = 5
 
-# Tulostetaan ruudukko (0, jos arvo ei ole tiedossa):
+# tulostetaan ruudukko (0, jos arvo ei ole tiedossa):
 for y in range(9):
     for x in range(9):
         if (x, y) in sudoku:
