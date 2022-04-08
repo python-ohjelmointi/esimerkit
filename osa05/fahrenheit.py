@@ -11,3 +11,7 @@ Annettu lämpötila tulee siis kertoa luvulla 1,8 ja tulokseen tulee lisätä 32
 >>> muunna_fahrenheitiksi(55)
 131.0
 '''
+
+
+def muunna_fahrenheitiksi(celsius: int) -> float:
+    return celsius * 1.8 + 32
