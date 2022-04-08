@@ -1,4 +1,8 @@
 '''
+Tämä tiedosto sisältää "doctest"-testejä, jotka voit ajaa komennolla:
+
+$ python3 -m doctest -v arvosanat.py
+
 Toteuta funktio arvosanojen_keskiarvo, joka saa parametrinaan listan kokonaislukuja,
 ja palauttaa niiden keskiarvon. Erikoisuutena arvosanojen keskiarvoja laskettaessa
 nollat tulee jättää huomioimatta.

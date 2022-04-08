@@ -1,4 +1,8 @@
 '''
+Tämä tiedosto sisältää "doctest"-testejä, jotka voit ajaa komennolla:
+
+$ python3 -m doctest -v fahrenheit.py
+
 Kirjoita funktio muunna_fahrenheitiksi, joka muuntaa sille annetun lämpötilan
 Celsius-asteikosta Fahrenheit-asteikkoon, ja palauttaa tuloksen.
 
