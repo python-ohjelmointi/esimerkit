@@ -1,0 +1,1 @@
+ [Väestötietojärjestelmän suomalaisten nimiaineistot](https://www.avoindata.fi/data/fi/dataset/none) by [Digi- ja väestötietovirasto](https://www.avoindata.fi/data/fi/organization/digi_ja_vaestotietovirasto) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

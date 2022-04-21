@@ -1,5 +1,5 @@
 '''
-Tämä esimerkkitiedosto näyttää, miten voit selvittää toisen tiedoston
+Tämä esimerkkitiedosto näyttää, miten voit selvittää haluamasi tiedoston
 sijainnin suhteessa suoritettavaan Python-skriptiin pathlib:in avulla.
 
 Käsiteltävien tiedostojen todellisen polun käyttäminen on kannattavaa, koska
@@ -8,8 +8,8 @@ ohjelma on käynnistetty.
 '''
 from pathlib import Path
 
-# Luodaan polku 'tiedosto.txt'-tiedostoon hyödyntämällä tämän skritin sijaintia:
-tiedosto = Path(__file__).resolve().parent / 'tiedosto.txt'
+# Luodaan polku 'nimet.csv'-tiedostoon hyödyntämällä tämän skritin sijaintia:
+tiedosto = Path(__file__).resolve().parent / 'tiedostot' / 'nimet.csv'
 
-# Luetaan tiedosto ja tulostetaan sen sisältö:
-print(tiedosto.read_text())
+# Luetaan tiedosto ja tulostetaan sen sisältö. Huom! Merkistöksi on määritetty utf-8:
+print(tiedosto.read_text(encoding='UTF-8'))
