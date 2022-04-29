@@ -4,6 +4,7 @@ Tämä tiedosto sisältää pytest-testejä.
 Pytest voidaan asentaa komennolla `python -m pip install pytest`
 Testit voidaan ajaa komennolla `python -m pytest sudoku_tarkistin_test.py`
 
+Tutustu Pytest-työkaluun osoitteessa https://docs.pytest.org/
 '''
 
 from sudoku_tarkistin import rivi_oikein, sarake_oikein, sudoku_oikein, sudoku_valmis, nelio_oikein

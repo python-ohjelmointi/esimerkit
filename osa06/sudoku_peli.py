@@ -1,7 +1,8 @@
 '''
 Tämä tiedosto sisältää Sudoku-pelin käyttöliittymän, mutta se ei sisällä lainkaan
 pelin logiikkaa. Logiikka on toteutettu aikaisemmissa viikkoharjoituksissa, ja
-lisäksi pelin tueksi on toteutettu uudet sudoku_valmis-, ja tulotsa-funktiot.
+lisäksi pelin tueksi on toteutettu uudet sudoku_valmis-, ja tulosta-funktiot.
+Logiikka löytyy tiedostosta sudoku_tarkistin.py.
 '''
 from sudoku_tarkistin import tulosta, sudoku_oikein, sudoku_valmis
 
@@ -31,9 +32,8 @@ sudoku = [
 
 def kysy_numero(teksti: str) -> int:
     '''
-    Pyytää käyttäjää syöttämään kokonaisluvun käyttäen
-    annettua tekstiä. Toistaa kysymyksen kunnes saa
-    kelvollisen kokonaisluvun, joka palautetaan.
+    Pyytää käyttäjää syöttämään kokonaisluvun käyttäen annettua tekstiä.
+    Toistaa kysymyksen kunnes saa kelvollisen kokonaisluvun, joka palautetaan.
     '''
     while True:
         try:
