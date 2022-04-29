@@ -69,5 +69,6 @@ def test_sudoku_ei_valmis():
 
     assert tulos is False
 
+# pylint: disable=fixme
 # TODO: testaa täysi ruudukko ja `sudoku_valmis`
 # TODO: testaa validi ruudukko ja `sudoku_oikein`
