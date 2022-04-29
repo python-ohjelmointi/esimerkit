@@ -15,7 +15,7 @@ logo = r'''
 
 '''
 
-# pelin alkutila (lainattu mooc.fi-esimerkistä)
+# pelin alkutila on lainattu mooc.fi:n esimerkistä
 sudoku = [
     [2, 6, 7, 8, 3, 9, 5, 0, 4],
     [9, 0, 3, 5, 1, 0, 6, 0, 0],
@@ -29,7 +29,12 @@ sudoku = [
 ]
 
 
-def kysy_numero(teksti):
+def kysy_numero(teksti: str) -> int:
+    '''
+    Pyytää käyttäjää syöttämään kokonaisluvun käyttäen
+    annettua tekstiä. Toistaa kysymyksen kunnes saa
+    kelvollisen kokonaisluvun, joka palautetaan.
+    '''
     while True:
         try:
             numero = int(input(teksti))
