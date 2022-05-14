@@ -16,19 +16,6 @@ logo = r'''
 
 '''
 
-# pelin alkutila on lainattu mooc.fi:n esimerkistä
-sudoku = [
-    [2, 6, 7, 8, 3, 9, 5, 0, 4],
-    [9, 0, 3, 5, 1, 0, 6, 0, 0],
-    [0, 5, 1, 6, 0, 0, 8, 3, 9],
-    [5, 1, 9, 0, 4, 6, 3, 2, 8],
-    [8, 0, 2, 1, 0, 5, 7, 0, 6],
-    [6, 7, 4, 3, 2, 0, 0, 0, 5],
-    [0, 0, 0, 4, 5, 7, 2, 6, 3],
-    [3, 2, 0, 0, 8, 0, 0, 5, 7],
-    [7, 4, 5, 0, 0, 3, 9, 0, 1]
-]
-
 
 def kysy_numero(teksti: str) -> int:
     '''
@@ -44,18 +31,18 @@ def kysy_numero(teksti: str) -> int:
             print(virhe)
 
 
-def pelaa():
+def pelaa(sudoku: list):
     print(logo)
 
     while not sudoku_valmis(sudoku):
         tulosta(sudoku)
         print()
 
-        rivi = kysy_numero('Syötä rivi: ')
-        sarake = kysy_numero('Syötä sarake: ')
-        numero = kysy_numero('Syötä numero: ')
-
         try:
+            rivi = kysy_numero('Syötä rivi: ')
+            sarake = kysy_numero('Syötä sarake: ')
+            numero = kysy_numero('Syötä numero: ')
+
             alkuperainen = sudoku[rivi][sarake]
             sudoku[rivi][sarake] = numero
 
@@ -68,14 +55,33 @@ def pelaa():
         except IndexError:
             print('Virheellinen rivi tai sarake!')
 
+        except KeyboardInterrupt:
+            return False
+
         print()
+
+    return True
 
 
 if __name__ == '__main__':
-    try:
-        pelaa()
-        print('Sait sudokun valmiiksi!')
+    # pelin alkutila on lainattu mooc.fi:n esimerkistä
+    ruudukko = [
+        [2, 6, 7, 8, 3, 9, 5, 0, 4],
+        [9, 0, 3, 5, 1, 0, 6, 0, 0],
+        [0, 5, 1, 6, 0, 0, 8, 3, 9],
+        [5, 1, 9, 0, 4, 6, 3, 2, 8],
+        [8, 0, 2, 1, 0, 5, 7, 0, 6],
+        [6, 7, 4, 3, 2, 0, 0, 0, 5],
+        [0, 0, 0, 4, 5, 7, 2, 6, 3],
+        [3, 2, 0, 0, 8, 0, 0, 5, 7],
+        [7, 4, 5, 0, 0, 3, 9, 0, 1]
+    ]
 
-    except KeyboardInterrupt:
-        print()
-        print('Kiitos pelaamisesta!')
+    valmis = pelaa(ruudukko)
+
+    if valmis:
+        print('Sait sudokun valmiiksi:\n')
+        tulosta(ruudukko)
+
+    else:
+        print('\nKiitos pelaamisesta!')
